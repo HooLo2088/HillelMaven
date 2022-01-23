@@ -16,6 +16,12 @@ public class MainPage extends BasePage {
     @FindBy(css = "#content > ul > li:nth-child(5) > a")
     private WebElement challengButton;
 
+    @FindBy(css = "#content > ul > li:nth-child(17) > a")
+    private WebElement fileDownLoadButton;
+
+    @FindBy(css = "#content > ul > li:nth-child(18) > a")
+    private WebElement fileUpLoadButton;
+
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -35,5 +41,15 @@ public class MainPage extends BasePage {
     public ChallengPage goToChallengPage() {
         challengButton.click();
         return new ChallengPage(driver);
+    }
+
+    public FileDownloadPage goToFileDownloadPage(){
+        fileDownLoadButton.click();
+        return new FileDownloadPage(driver);
+    }
+
+    public FileUploadPage goToUploadPage(){
+        fileUpLoadButton.click();
+        return new FileUploadPage(driver);
     }
 }

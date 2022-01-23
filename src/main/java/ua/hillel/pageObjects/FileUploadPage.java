@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.io.File;
+
 public class FileUploadPage extends BasePage {
 
     @FindBy(css = "#file-upload")
@@ -25,12 +27,18 @@ public class FileUploadPage extends BasePage {
         clickButton(fileButton);
     }
 
-    public void clickUpLoadButton() {
+    public FileUploadPage clickUpLoadButton() {
         clickButton(upLoadButton);
+        return this;
     }
 
     public String getSuccesMesage() {
         return succsesMesage.getText();
+    }
+
+    public FileUploadPage sendNameFile(){
+        fileButton.sendKeys(new File("text").getAbsolutePath());
+        return this;
     }
 
 }

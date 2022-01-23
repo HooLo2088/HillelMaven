@@ -3,6 +3,7 @@ package test.mvnTest.homeWork16For26;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.mvnTest.BaseTest;
+import ua.hillel.File.FileObject;
 import ua.hillel.pageObjects.FileDownloadPage;
 import ua.hillel.pageObjects.FileUploadPage;
 import java.io.File;
@@ -22,17 +23,14 @@ public class DownAndUploadFileTest extends BaseTest {
                 .clickDownFileTxtButton();
         fileDownloadPage.waitForFileDownload("text.txt");
 
-        File file = new File("target/download/text.txt").getAbsoluteFile();
-        try {
-            Path path = Paths.get("target/download/text.txt");
-            Files.writeString(path, "\nЛя-ля-ля\nля-ля-ля", StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        FileObject file = new FileObject()
+                .absoluteAddress()
+                .inputText();
 
-        FileUploadPage fileUploadPage = openApp().goToUploadPage();
-        fileUploadPage.fileButton.sendKeys(new File("target/download/text.txt").getAbsolutePath());
-        fileUploadPage.clickUpLoadButton();
+        FileUploadPage fileUploadPage = openApp()
+                .goToUploadPage()
+                .sendNameFile()
+                .clickUpLoadButton();
 
         String successMessage = fileUploadPage.getSuccesMesage();
         Assert.assertTrue(successMessage.contains("File Uploaded!"));

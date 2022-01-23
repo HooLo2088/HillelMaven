@@ -12,12 +12,10 @@ public class UploadTest extends BaseTest {
 
     @Test
     public void uploadFileTest() {
-        FileUploadPage fileUploadPage = openApp().goToUploadPage();
-
-
-        fileUploadPage.fileButton.sendKeys(new File("text").getAbsolutePath());
-
-        fileUploadPage.clickUpLoadButton();
+        FileUploadPage fileUploadPage = openApp()
+                .goToUploadPage()
+                .sendNameFile()
+                .clickUpLoadButton();
 
         String successMessage = fileUploadPage.getSuccesMesage();
         Assert.assertTrue(successMessage.contains("File Uploaded!"));
