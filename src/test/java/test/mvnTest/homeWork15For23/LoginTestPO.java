@@ -2,6 +2,7 @@ package test.mvnTest.homeWork15For23;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.mvnTest.BaseTest;
 
 public class LoginTestPO extends BaseTest {
 

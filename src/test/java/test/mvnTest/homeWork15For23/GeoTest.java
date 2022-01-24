@@ -1,6 +1,7 @@
 package test.mvnTest.homeWork15For23;
 
 import org.testng.annotations.Test;
+import test.mvnTest.BaseTest;
 import ua.hillel.pageObjects.GeoPage;
 
 public class GeoTest extends BaseTest {

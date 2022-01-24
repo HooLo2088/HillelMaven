@@ -2,6 +2,7 @@ package test.mvnTest.homeWork15For23;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import test.mvnTest.BaseTest;
 import ua.hillel.pageObjects.ChallengPage;
 
 public class ChallengTest extends BaseTest {
