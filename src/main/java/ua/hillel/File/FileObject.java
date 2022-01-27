@@ -9,19 +9,13 @@ import java.nio.file.StandardOpenOption;
 
 public class FileObject {
 
-    public String fileDirectory = "target/download/text.txt";
+    private String fileDirectory = "target/download/text.txt";
 
 
     public FileObject absoluteAddress() {
         new File(fileDirectory).getAbsoluteFile();
         return this;
     }
-
-    public FileObject getPath() {
-        Path path = Paths.get(fileDirectory);
-        return this;
-    }
-
 
     public FileObject inputText() {
         try {
