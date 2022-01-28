@@ -8,6 +8,8 @@ public class FileTest {
     @Test
     public void fileTest() {
 
-        FileObject file = new FileObject().absoluteAddress().inputText();
+        FileObject file = new FileObject()
+                .absoluteAddress()
+                .inputText();
     }
 }
