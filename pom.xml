@@ -17,6 +17,8 @@
         <webdriverManagerVersion>5.0.3</webdriverManagerVersion>
         <selenidVersion>5.24.2</selenidVersion>
         <okhttpVersion>4.9.3</okhttpVersion>
+        <allureVersion>2.17.2</allureVersion>
+        <aspectj.version>1.8.10</aspectj.version>
 
     </properties>
 
@@ -92,8 +94,25 @@
             <version>2.8.9</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allureVersion}</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>${allureVersion}</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
 
 
     </dependencies>
@@ -105,12 +124,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <!--                        <suiteXmlFiles>-->
-                    <!--                            <suiteXmlFile>testng.xml</suiteXmlFile>-->
-                    <!--                        </suiteXmlFiles>-->
-                    <!--                        <systemPropertyVariables>-->
-                    <!--                            <siteUrl>http://some.site</siteUrl>-->
-                    <!--                        </systemPropertyVariables>-->
+
+                    <!--suppress UnresolvedMavenProperty -->
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                        <siteUrl>http://some.site</siteUrl>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
