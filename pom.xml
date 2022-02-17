@@ -115,6 +115,9 @@
         </dependency>
 
 
+
+
+
     </dependencies>
 
     <build>
@@ -130,13 +133,13 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
 
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <systemPropertyVariables>
-                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                        <siteUrl>http://some.site</siteUrl>
-                    </systemPropertyVariables>
+                    <!--                        <suiteXmlFiles>-->
+                    <!--                            <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                    <!--                        </suiteXmlFiles>-->
+                                            <systemPropertyVariables>
+                                                <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                                                <siteUrl>http://some.site</siteUrl>
+                                            </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
