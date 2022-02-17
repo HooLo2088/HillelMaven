@@ -138,7 +138,7 @@
                     <!--                        </suiteXmlFiles>-->
                                             <systemPropertyVariables>
                                                 <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                                                <siteUrl>http://some.site</siteUrl>
+<!--                                                <siteUrl>http://some.site</siteUrl>-->
                                             </systemPropertyVariables>
                 </configuration>
             </plugin>
