@@ -1,5 +1,6 @@
 package ua.hillel.pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +24,7 @@ public class SecurePage extends BasePage {
         return webDriverWait.until(ExpectedConditions.presenceOfElementLocated(byAlertText)).getText();
     }
 
+    @Step("Click Logout and return to Home Page")
     public LoginPage logout() {
         this.logoutButton.click();
         return new LoginPage(driver);
