@@ -1,5 +1,6 @@
 package ua.hillel.pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,16 +25,19 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Enter UserName")
     public LoginPage setUsername(String username) {
         userNameInput.sendKeys(username);
         return this;
     }
 
+    @Step("Enter Password")
     public LoginPage setPassword(String password) {
         passwordInput.sendKeys(password);
         return this;
     }
 
+    @Step("Click Login Button")
     public SecurePage clickLoginButton() {
         clickButton(loginButton);
         return new SecurePage(driver);
