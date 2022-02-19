@@ -108,7 +108,23 @@
             <scope>test</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.17.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
 
 
     </dependencies>
@@ -132,7 +148,7 @@
 
                     <systemPropertyVariables>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                        <!--                                                <siteUrl>http://some.site</siteUrl>-->
+                        <!-- <siteUrl>http://some.site</siteUrl>-->
                     </systemPropertyVariables>
                 </configuration>
                 <dependencies>
