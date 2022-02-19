@@ -2,18 +2,20 @@
 
 <suite name="Suite1" verbose="1" >
     <test name="HomeWorkFor17" >
+<!--        <classes>-->
 
+<!--            <parameter name="name" value="Hoolo"/>-->
+<!--            <parameter name="age" value="33"/>-->
 
-        <classes>
+<!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_1"/>-->
+<!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_2"/>-->
+<!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_3"/>-->
 
-            <parameter name="name" value="Hoolo"/>
-            <parameter name="age" value="33"/>
-
-
-            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_1"/>
-            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_2"/>
-            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_3"/>
-
-        </classes>
+<!--        </classes>-->
     </test>
+
+    <test name="HomeWorkFor12">
+
+    </test>
+
 </suite>
