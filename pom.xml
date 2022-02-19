@@ -108,11 +108,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
+
 
 
     </dependencies>
@@ -139,6 +135,14 @@
                         <!--                                                <siteUrl>http://some.site</siteUrl>-->
                     </systemPropertyVariables>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+
+                </dependencies>
             </plugin>
         </plugins>
     </build>
