@@ -14,7 +14,8 @@ public class DinamicLoadTestSelenide extends BaseTestSelenide {
                 .clickStartButton();
 
         String someText = getTextValue.getText();
-        Assert.assertTrue(someText.contains("Hello World!"));
+//        Assert.assertTrue(someText.contains("Hello World!"));
+        Assert.assertTrue(someText.contains("FigliMigli"));
 
     }
 }
