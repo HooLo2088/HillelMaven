@@ -1,8 +1,8 @@
 package test.mvnTest.homeWork18For29;
 
 import org.testng.annotations.Test;
-import ua.hillel.ApiOrder.Order;
-import ua.hillel.ApiOrder.RestClient;
+import ua.hillel.BasicCourse.ApiOrder.Order;
+import ua.hillel.BasicCourse.ApiOrder.RestClient;
 
 import java.io.IOException;
 

@@ -1,24 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1">
-    <test name="HomeWorkFor11">
-        <packages>
-            <package name="test.mvnTest.homeWork11For17"></package>
-        </packages>
-        <!--        <classes>-->
-        <!--            <parameter name="name" value="Hoolo"/>-->
-        <!--            <parameter name="age" value="33"/>-->
+<!--    <test name="HomeWorkFor11">-->
+<!--        <packages>-->
+<!--            <package name="test.mvnTest.homeWork11For17"></package>-->
+<!--        </packages>-->
 
-        <!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_1"/>-->
-        <!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_2"/>-->
-        <!--            <class name="test.mvnTest.homeWork11For17.homeWorkFor17_3"/>-->
-        <!--        </classes>-->
-    </test>
+<!--    </test>-->
 
-    <test name="HomeWorkFor12">
-        <packages>
-            <package name="test.mvnTest.homeWork12for20"></package>
-        </packages>
-    </test>
+<!--    <test name="HomeWorkFor12">-->
+<!--        <packages>-->
+<!--            <package name="test.mvnTest.homeWork12for20"></package>-->
+<!--        </packages>-->
+<!--    </test>-->
 
 </suite>
