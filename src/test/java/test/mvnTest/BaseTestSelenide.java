@@ -1,7 +1,7 @@
 package test.mvnTest;
 
 import com.codeborne.selenide.Configuration;
-import ua.hillel.pageObjectSelenide.MainPageSelenide;
+import ua.hillel.BasicCourse.pageObjectSelenide.MainPageSelenide;
 import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTestSelenide {

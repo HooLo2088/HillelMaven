@@ -1,4 +1,4 @@
-package test.mvnTest.homeWork18For29;
+package test.mvnTest.BasicTest.homeWork18For29;
 
 import org.testng.annotations.Test;
 import ua.hillel.BasicCourse.ApiOrder.Order;

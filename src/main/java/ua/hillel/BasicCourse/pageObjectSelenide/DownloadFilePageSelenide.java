@@ -1,4 +1,4 @@
-package ua.hillel.pageObjectSelenide;
+package ua.hillel.BasicCourse.pageObjectSelenide;
 
 
 import org.openqa.selenium.By;

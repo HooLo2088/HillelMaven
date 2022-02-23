@@ -1,9 +1,9 @@
-package test.mvnTest.homeWork17For27;
+package test.mvnTest.BasicTest.homeWork17For27;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import test.mvnTest.BaseTestSelenide;
-import ua.hillel.pageObjectSelenide.DinamicLoading1PageSelenide;
+import ua.hillel.BasicCourse.pageObjectSelenide.DinamicLoading1PageSelenide;
 
 public class DinamicLoadTestSelenide extends BaseTestSelenide {
     @Test

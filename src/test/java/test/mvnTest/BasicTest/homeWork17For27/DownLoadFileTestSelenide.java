@@ -1,10 +1,9 @@
-package test.mvnTest.homeWork17For27;
+package test.mvnTest.BasicTest.homeWork17For27;
 
 import org.testng.annotations.Test;
 import test.mvnTest.BaseTestSelenide;
-import ua.hillel.pageObjectSelenide.DownloadFilePageSelenide;
+import ua.hillel.BasicCourse.pageObjectSelenide.DownloadFilePageSelenide;
 import java.io.File;
-import java.io.FileNotFoundException;
 
 public class DownLoadFileTestSelenide extends BaseTestSelenide {
 

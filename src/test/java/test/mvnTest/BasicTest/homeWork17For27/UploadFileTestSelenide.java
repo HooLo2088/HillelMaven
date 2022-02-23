@@ -1,8 +1,8 @@
-package test.mvnTest.homeWork17For27;
+package test.mvnTest.BasicTest.homeWork17For27;
 
 import org.testng.annotations.Test;
 import test.mvnTest.BaseTestSelenide;
-import ua.hillel.pageObjectSelenide.UploadFilePageSelenide;
+import ua.hillel.BasicCourse.pageObjectSelenide.UploadFilePageSelenide;
 
 import java.io.File;
 
