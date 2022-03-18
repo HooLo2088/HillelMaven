@@ -43,5 +43,4 @@ public class AddJobThesisPage {
         this.setPriceJob(priceJob);
         return this.clickCreateJobButton();
     }
-
 }
