@@ -14,11 +14,11 @@ public class AuthController {
         JSONObject jsonobject = new JSONObject();
         jsonobject.put("username", user.getUsername());
         jsonobject.put("password", user.getPassword());
-        jsonobject.put("confirmpassword", user.getConfirmpassword());
+        jsonobject.put("confirmPassword", user.getConfirmpassword());
 
         RequestBody requestBody = RequestBody.create(jsonobject.toString().getBytes(StandardCharsets.UTF_8));
         Request request = new Request.Builder()
-                .url("https://freelance.lsrv.in.ua/api/auth/singup")
+                .url("https://freelance.lsrv.in.ua/api/auth/signup")
                 .post(requestBody)
                 .header("Content-Type", "application/json")
                 .build();
@@ -35,7 +35,7 @@ public class AuthController {
 
         RequestBody requestBody = RequestBody.create(jsonobject.toString().getBytes(StandardCharsets.UTF_8));
         Request request = new Request.Builder()
-                .url("https://freelance.lsrv.in.ua/api/auth/singin")
+                .url("https://freelance.lsrv.in.ua/api/auth/signin")
                 .post(requestBody)
                 .header("Content-Type", "application/json")
                 .build();
