@@ -32,6 +32,5 @@ public class AuthTest {
     AuthController authController = new AuthController();
     String token = authController.login(user);
         Assert.assertFalse(token.isEmpty());
-//        System.out.println(token);
      }
 }

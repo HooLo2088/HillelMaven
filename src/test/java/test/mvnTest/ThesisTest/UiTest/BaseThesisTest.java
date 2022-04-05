@@ -1,7 +1,7 @@
-package test.mvnTest.ThesisTest;
+package test.mvnTest.ThesisTest.UiTest;
 
 import com.codeborne.selenide.Configuration;
-import ua.hillel.ThesisObject.StartThesisPage;
+import ua.hillel.ThesisObject.UiObject.StartThesisPage;
 
 import static com.codeborne.selenide.Selenide.open;
 

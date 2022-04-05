@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 
 public class AuthController {
     public void registerUser(User user) throws IOException {
+
         JSONObject jsonobject = new JSONObject();
         jsonobject.put("username", user.getUsername());
         jsonobject.put("password", user.getPassword());
@@ -30,8 +31,6 @@ public class AuthController {
         JSONObject jsonobject = new JSONObject();
         jsonobject.put("username", user.getUsername());
         jsonobject.put("password", user.getPassword());
-
-
 
         RequestBody requestBody = RequestBody.create(jsonobject.toString().getBytes(StandardCharsets.UTF_8));
         Request request = new Request.Builder()

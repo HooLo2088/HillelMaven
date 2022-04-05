@@ -1,8 +1,9 @@
-package test.mvnTest.ThesisTest;
+package test.mvnTest.ThesisTest.UiTest;
 
 import org.testng.annotations.Test;
+import test.mvnTest.ThesisTest.UiTest.BaseThesisTest;
 
-public class RemoveJobTest extends BaseThesisTest{
+public class RemoveJobTest extends BaseThesisTest {
 
     @Test
     public void removeTest(){

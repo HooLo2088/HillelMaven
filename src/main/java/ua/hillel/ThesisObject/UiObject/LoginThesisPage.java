@@ -1,4 +1,4 @@
-package ua.hillel.ThesisObject;
+package ua.hillel.ThesisObject.UiObject;
 
 import com.codeborne.selenide.SelenideElement;
 

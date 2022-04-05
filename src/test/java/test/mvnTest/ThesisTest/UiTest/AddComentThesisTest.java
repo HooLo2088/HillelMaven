@@ -1,4 +1,4 @@
-package test.mvnTest.ThesisTest;
+package test.mvnTest.ThesisTest.UiTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

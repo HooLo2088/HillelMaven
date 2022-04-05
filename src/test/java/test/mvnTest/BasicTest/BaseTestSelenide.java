@@ -1,4 +1,4 @@
-package test.mvnTest;
+package test.mvnTest.BasicTest;
 
 import com.codeborne.selenide.Configuration;
 import ua.hillel.BasicCourse.pageObjectSelenide.MainPageSelenide;

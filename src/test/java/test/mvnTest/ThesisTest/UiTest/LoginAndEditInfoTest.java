@@ -1,7 +1,8 @@
-package test.mvnTest.ThesisTest;
+package test.mvnTest.ThesisTest.UiTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.mvnTest.ThesisTest.UiTest.BaseThesisTest;
 
 public class LoginAndEditInfoTest extends BaseThesisTest {
 

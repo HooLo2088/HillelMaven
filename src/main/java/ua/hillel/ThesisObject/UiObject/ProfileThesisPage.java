@@ -1,14 +1,8 @@
-package ua.hillel.ThesisObject;
+package ua.hillel.ThesisObject.UiObject;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Driver;
 import com.codeborne.selenide.SelenideElement;
-import com.github.javafaker.Faker;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;

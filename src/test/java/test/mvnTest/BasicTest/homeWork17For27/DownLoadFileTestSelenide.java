@@ -1,7 +1,7 @@
 package test.mvnTest.BasicTest.homeWork17For27;
 
 import org.testng.annotations.Test;
-import test.mvnTest.BaseTestSelenide;
+import test.mvnTest.BasicTest.BaseTestSelenide;
 import ua.hillel.BasicCourse.pageObjectSelenide.DownloadFilePageSelenide;
 import java.io.File;
 

@@ -1,6 +1,7 @@
-package ua.hillel.ThesisObject;
+package ua.hillel.ThesisObject.UiObject;
 
 import com.codeborne.selenide.SelenideElement;
+import ua.hillel.ThesisObject.UiObject.LoginThesisPage;
 
 import static com.codeborne.selenide.Selenide.$;
 
