@@ -1,5 +1,6 @@
 package test.mvnTest.ThesisTest.ApiTest;
 
+import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -18,11 +19,12 @@ public class UserControllerTest {
 
     @BeforeClass
     public void prepareUser() {
+        Faker faker = new Faker();
         user = new User();
         user.setUsername("hoolo1");
         user.setPassword("12345678");
-        user.setName("Figli");
-        user.setLastname("Migli");
+        user.setName(faker.name().name());
+        user.setLastname(faker.name().lastName());
     }
 
     @Test
@@ -38,18 +40,15 @@ public class UserControllerTest {
     @Test(dependsOnMethods = "getUserId")
     public void getUserWithId() throws IOException {
         UserController userController = new UserController();
-        String newInfo = userController.getUserWithId(userToken, userId);
-        Assert.assertEquals(newInfo, userId, "not work");
+        String newId = userController.getUserWithId(userToken, userId);
+        Assert.assertEquals(newId, userId, "not work");
     }
 
     @Test(dependsOnMethods = "getUserId")
     public void updateUserInfo() throws IOException {
         UserController userController = new UserController();
-       String oldName = userController.getUser(userToken).getName();
-       String newName = userController.updateUser(userToken, user).getLastname();
+        String oldName = userController.getUser(userToken).getName();
+        String newName = userController.updateUser(userToken, user).getName();
         Assert.assertNotEquals(newName, oldName, "ne rabotaet");
-        System.out.println(oldName);
-        System.out.println(newName);
-
     }
 }

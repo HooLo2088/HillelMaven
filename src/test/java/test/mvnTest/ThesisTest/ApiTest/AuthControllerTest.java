@@ -9,7 +9,7 @@ import ua.hillel.ThesisObject.ApiObject.User;
 
 import java.io.IOException;
 
-public class AuthTest {
+public class AuthControllerTest {
     private User user;
 
     @BeforeClass

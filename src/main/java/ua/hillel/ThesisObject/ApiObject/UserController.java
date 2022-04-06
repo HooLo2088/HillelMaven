@@ -55,6 +55,7 @@ public class UserController {
                 .url("https://freelance.lsrv.in.ua/api/user/update")
                 .post(requestBody)
                 .header("Authorization", token)
+                .header("Content-Type", "application/json")
                 .build();
 
         Response response = new OkHttpClient().newCall(request).execute();
