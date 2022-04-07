@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    @Step("Click Login Button")
+    @Step("Click login Button")
     public SecurePage clickLoginButton() {
         clickButton(loginButton);
         return new SecurePage(driver);

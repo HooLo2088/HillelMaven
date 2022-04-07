@@ -29,7 +29,7 @@ public class MainPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @Step("Go to Login Page")
+    @Step("Go to login Page")
     public LoginPage goToLoginPage() {
         logButton.click();
         return new LoginPage(driver);
