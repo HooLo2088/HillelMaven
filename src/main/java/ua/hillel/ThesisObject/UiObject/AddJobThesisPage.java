@@ -13,31 +13,31 @@ public class AddJobThesisPage {
     private final SelenideElement createJobButton = $("body > app-root > div > app-profile > div > div.row > app-add-job > div > form > div > button > span.mat-button-wrapper");
     private final SelenideElement counterMyJob = $("body > app-root > div > app-profile > div > div.row > app-my-jobs > div > h2");
 
-    public String getCounterMyJob(){
+    public String getCounterMyJob() {
         return counterMyJob.shouldBe(Condition.visible).getText();
     }
 
-    public AddJobThesisPage setTitleJob (String titleJob){
+    public AddJobThesisPage setTitleJob(String titleJob) {
         titleJobFilde.sendKeys(titleJob);
         return this;
     }
 
-    public AddJobThesisPage setDescJob (String descJob){
+    public AddJobThesisPage setDescJob(String descJob) {
         descJobFilde.sendKeys(descJob);
         return this;
     }
 
-    public AddJobThesisPage setPriceJob (String priceJob){
+    public AddJobThesisPage setPriceJob(String priceJob) {
         priceJobFilde.sendKeys(priceJob);
         return this;
     }
 
-    public AddJobThesisPage clickCreateJobButton(){
+    public AddJobThesisPage clickCreateJobButton() {
         createJobButton.click();
         return new AddJobThesisPage();
     }
 
-    public AddJobThesisPage setNewJob(String titleJob, String descJob, String priceJob){
+    public AddJobThesisPage setNewJob(String titleJob, String descJob, String priceJob) {
         this.setTitleJob(titleJob);
         this.setDescJob(descJob);
         this.setPriceJob(priceJob);

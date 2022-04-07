@@ -7,7 +7,7 @@ import test.mvnTest.ThesisTest.UiTest.BaseThesisTest;
 public class LoginAndEditInfoTest extends BaseThesisTest {
 
     @Test
-    public void loginAndEditInfo(){
+    public void loginAndEditInfo() {
         String alertNewInfo = opennApp()
                 .goToLoginPage()
                 .login("hoolo", "12345678")

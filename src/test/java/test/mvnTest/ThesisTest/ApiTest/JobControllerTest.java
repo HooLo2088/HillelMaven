@@ -20,6 +20,7 @@ public class JobControllerTest {
     @BeforeClass
     public void prepareUser() throws IOException {
         Faker faker = new Faker();
+
         user = new User();
         user.setUsername("hoolo1");
         user.setPassword("12345678");
@@ -27,7 +28,7 @@ public class JobControllerTest {
         job = new Job();
         job.setTitle(faker.company().name());
         job.setDescription(faker.address().country());
-        job.setPrice(faker.number().randomDigit());
+        job.setPrice(100500.34);
 
         AuthController authController = new AuthController();
         userToken = authController.login(user);
@@ -63,7 +64,7 @@ public class JobControllerTest {
     public void deleteUserJobWithId() throws IOException {
         JobController jobController = new JobController();
         Integer jobId = jobController.getUserJob(userToken).get(0).getId();
-        String delMessa = jobController.deleteJobWithId(userToken,jobId);
+        String delMessa = jobController.deleteJobWithId(userToken, jobId);
         Assert.assertFalse(delMessa.isEmpty());
     }
 }

@@ -13,7 +13,7 @@ public class AuthControllerTest {
     private User user;
 
     @BeforeClass
-    public void prepareUser(){
+    public void prepareUser() {
         Faker faker = new Faker();
         user = new User();
         user.setUsername(faker.name().username());
@@ -29,8 +29,8 @@ public class AuthControllerTest {
 
     @Test(dependsOnMethods = "testRegistration")
     public void testLogin() throws IOException {
-    AuthController authController = new AuthController();
-    String token = authController.login(user);
+        AuthController authController = new AuthController();
+        String token = authController.login(user);
         Assert.assertFalse(token.isEmpty());
-     }
+    }
 }

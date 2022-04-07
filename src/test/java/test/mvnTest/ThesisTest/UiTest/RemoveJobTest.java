@@ -6,8 +6,8 @@ import test.mvnTest.ThesisTest.UiTest.BaseThesisTest;
 public class RemoveJobTest extends BaseThesisTest {
 
     @Test
-    public void removeTest(){
-       String comments = opennApp()
+    public void removeTest() {
+        String comments = opennApp()
                 .goToLoginPage()
                 .login("hoolo", "12345678")
                 .goToProfilePage()

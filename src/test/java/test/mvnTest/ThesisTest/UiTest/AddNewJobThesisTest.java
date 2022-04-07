@@ -7,7 +7,7 @@ import test.mvnTest.ThesisTest.UiTest.BaseThesisTest;
 public class AddNewJobThesisTest extends BaseThesisTest {
 
     @Test
-    public void addNewJob(){
+    public void addNewJob() {
         String alert = opennApp()
                 .goToLoginPage()
                 .login("hoolo", "12345678")

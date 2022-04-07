@@ -10,9 +10,9 @@ public class JobInfoThesisPage {
 
     private final SelenideElement commentFilde = $(By.xpath("//textarea[@formcontrolname='message']"));
     private final SelenideElement leaveCommentButton = $("body > app-root > div > app-job > div > mat-card > div > button > span.mat-button-wrapper");
-    private final SelenideElement myCommentString = $ ("body > app-root > div > app-job > div > div.comments > div > mat-card > mat-card-content > p");
+    private final SelenideElement myCommentString = $("body > app-root > div > app-job > div > div.Comment > div > mat-card > mat-card-content > p");
 
-    public String myNewComment(){
+    public String myNewComment() {
         return myCommentString.shouldBe(Condition.visible).getText();
     }
 

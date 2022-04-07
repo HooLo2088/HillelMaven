@@ -4,15 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.lang.reflect.Array;
 
 @Getter
 @Setter
 @ToString
-public class Job {
+public class Image {
     private Integer id;
-    private String title;
-    private String description;
-    private Double price;
-    private String user;
-    private Integer noOfComments;
+    private String name;
+    private String image;
+    private String message;
 }

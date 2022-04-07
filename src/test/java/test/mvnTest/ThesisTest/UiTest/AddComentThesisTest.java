@@ -11,9 +11,9 @@ public class AddComentThesisTest extends BaseThesisTest {
                 .goToLoginPage()
                 .login("hoolo", "12345678")
                 .clickViewInfoButton()
-                .setCommentAndClickButton("my new comment")
+                .setCommentAndClickButton("my new Comment")
                 .myNewComment();
 
-        Assert.assertTrue(myCommentText.contains("my new comment"));
+        Assert.assertTrue(myCommentText.contains("my new Comment"));
     }
 }

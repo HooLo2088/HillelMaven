@@ -4,15 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Getter
 @Setter
 @ToString
-public class Job {
+public class Comment {
     private Integer id;
-    private String title;
-    private String description;
-    private Double price;
-    private String user;
-    private Integer noOfComments;
+    private String message;
+    private String username;
+    private String commentDate;
 }

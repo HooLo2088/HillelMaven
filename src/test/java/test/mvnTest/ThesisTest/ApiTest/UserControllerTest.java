@@ -1,7 +1,6 @@
 package test.mvnTest.ThesisTest.ApiTest;
 
 import com.github.javafaker.Faker;
-import com.google.gson.Gson;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
