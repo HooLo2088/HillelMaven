@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1">
     <test name="HomeWorkFor11">
         <packages>
-            <package name="test.mvnTest.homeWork11For17"></package>
+            <package name="test.mvnTest.BasicTest.homeWork11For17"></package>
         </packages>
 
     </test>
